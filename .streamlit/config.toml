@@ -1,0 +1,45 @@
+# BOPET Intelligence — design tokens
+# Light, research-industrial product UI. Keep native Streamlit widgets.
+
+[theme]
+base = "light"
+primaryColor = "#2455A4"
+backgroundColor = "#F7F8FA"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#172033"
+linkColor = "#2455A4"
+borderColor = "#E2E8F0"
+greenColor = "#16835B"
+orangeColor = "#D97706"
+redColor = "#DC2626"
+blueColor = "#3974CA"
+font = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+headingFont = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap"
+codeFont = "'JetBrains Mono':https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"
+baseFontSize = 14
+headingFontSizes = ["30px", "22px", "19px", "16px", "14px", "12px"]
+headingFontWeights = [650, 600, 600, 500, 500, 500]
+metricValueFontSize = "2rem"
+metricValueFontWeight = 650
+baseRadius = "10px"
+buttonRadius = "8px"
+showWidgetBorder = true
+showSidebarBorder = false
+paddingTop = "1.1rem"
+paddingBottom = "2rem"
+dataframeBorderColor = "#E2E8F0"
+dataframeHeaderBackgroundColor = "#F1F5F9"
+dataframeHeaderTextColor = "#334155"
+chartCategoricalColors = ["#2455A4", "#3974CA", "#16835B", "#D97706", "#7C3AED", "#64748B"]
+
+[theme.sidebar]
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F7F8FA"
+textColor = "#172033"
+borderColor = "#E2E8F0"
+primaryColor = "#2455A4"
+paddingTop = "0.25rem"
+paddingBottom = "1rem"
+
+[browser]
+gatherUsageStats = false
