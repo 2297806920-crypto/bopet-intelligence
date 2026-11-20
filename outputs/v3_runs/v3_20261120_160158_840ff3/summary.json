@@ -1,0 +1,557 @@
+{
+  "run_id": "v3_20261120_160158_840ff3",
+  "resumed": false,
+  "scenario": "benchmark_2d",
+  "seed": 7,
+  "max_evaluations": 10,
+  "iterations": 10,
+  "candidates_evaluated": 10,
+  "stop_reason": "evaluation_budget",
+  "elapsed_s": 0.0044,
+  "best_candidate": {
+    "candidate_id": "adaptive_v31-6-855770",
+    "iteration": 6,
+    "parameters": {
+      "x1": 0.3401643528327233,
+      "x2": 0.6372148736758403
+    },
+    "derived_parameters": {},
+    "generation_strategy": "local",
+    "parent_candidate_id": "adaptive_v31-4-129815",
+    "constraint_version": "v3.0",
+    "data_mode": "SIMULATION_ONLY",
+    "timestamp": "2026-11-20T16:01:58"
+  },
+  "best_evaluation": {
+    "physical_result": {
+      "hard_feasible": true,
+      "missing_fields": []
+    },
+    "production_result": {
+      "objective": 0.9860997658085875,
+      "metrics": {
+        "x1": 0.3401643528327233,
+        "x2": 0.6372148736758403
+      }
+    },
+    "economic_result": {},
+    "uncertainty_result": {
+      "uncertainty": 0.0,
+      "missing_ratio": 0.0
+    },
+    "hard_feasible": true,
+    "soft_penalty": 0.0,
+    "objective_value": 0.9860997658085875,
+    "objective_vector": {},
+    "objective_version": "v3.0",
+    "evaluation_version": "v3.0",
+    "warnings": [],
+    "missing_fields": [],
+    "data_mode": "SIMULATION_ONLY"
+  },
+  "data_mode": "SIMULATION_ONLY",
+  "records": [
+    {
+      "iteration": 0,
+      "candidate_id": "bench-baseline",
+      "parameters": {
+        "x1": 0.5,
+        "x2": 0.5
+      },
+      "strategy": "BASELINE",
+      "control_action": null,
+      "search_step": null,
+      "exploration_ratio": null,
+      "candidate_count": null,
+      "objective": 0.8582000000000001,
+      "hard_feasible": true,
+      "soft_penalty": 0.0,
+      "uncertainty": 0.0,
+      "accepted_as_best": true,
+      "data_mode": "SIMULATION_ONLY",
+      "evaluation": {
+        "physical_result": {
+          "hard_feasible": true,
+          "missing_fields": []
+        },
+        "production_result": {
+          "objective": 0.8582000000000001,
+          "metrics": {
+            "x1": 0.5,
+            "x2": 0.5
+          }
+        },
+        "economic_result": {},
+        "uncertainty_result": {
+          "uncertainty": 0.0,
+          "missing_ratio": 0.0
+        },
+        "hard_feasible": true,
+        "soft_penalty": 0.0,
+        "objective_value": 0.8582000000000001,
+        "objective_vector": {},
+        "objective_version": "v3.0",
+        "evaluation_version": "v3.0",
+        "warnings": [],
+        "missing_fields": [],
+        "data_mode": "SIMULATION_ONLY"
+      }
+    },
+    {
+      "iteration": 1,
+      "candidate_id": "adaptive_v31-1-682554",
+      "parameters": {
+        "x1": 0.32383276483316237,
+        "x2": 0.15084917392450192
+      },
+      "strategy": "random",
+      "control_action": "EXPLORE",
+      "search_step": 0.2,
+      "exploration_ratio": 0.6,
+      "candidate_count": 2,
+      "objective": 0.3507652259626032,
+      "hard_feasible": true,
+      "soft_penalty": 0.0,
+      "uncertainty": 0.0,
+      "accepted_as_best": false,
+      "data_mode": "SIMULATION_ONLY",
+      "evaluation": {
+        "physical_result": {
+          "hard_feasible": true,
+          "missing_fields": []
+        },
+        "production_result": {
+          "objective": 0.3507652259626032,
+          "metrics": {
+            "x1": 0.32383276483316237,
+            "x2": 0.15084917392450192
+          }
+        },
+        "economic_result": {},
+        "uncertainty_result": {
+          "uncertainty": 0.0,
+          "missing_ratio": 0.0
+        },
+        "hard_feasible": true,
+        "soft_penalty": 0.0,
+        "objective_value": 0.3507652259626032,
+        "objective_vector": {},
+        "objective_version": "v3.0",
+        "evaluation_version": "v3.0",
+        "warnings": [],
+        "missing_fields": [],
+        "data_mode": "SIMULATION_ONLY"
+      }
+    },
+    {
+      "iteration": 2,
+      "candidate_id": "adaptive_v31-2-090122",
+      "parameters": {
+        "x1": 0.16622187574596703,
+        "x2": 0.6790034558991751
+      },
+      "strategy": "local",
+      "control_action": "EXPLORE",
+      "search_step": 0.2,
+      "exploration_ratio": 0.6,
+      "candidate_count": 2,
+      "objective": 0.9290897688349167,
+      "hard_feasible": true,
+      "soft_penalty": 0.0,
+      "uncertainty": 0.0,
+      "accepted_as_best": true,
+      "data_mode": "SIMULATION_ONLY",
+      "evaluation": {
+        "physical_result": {
+          "hard_feasible": true,
+          "missing_fields": []
+        },
+        "production_result": {
+          "objective": 0.9290897688349167,
+          "metrics": {
+            "x1": 0.16622187574596703,
+            "x2": 0.6790034558991751
+          }
+        },
+        "economic_result": {},
+        "uncertainty_result": {
+          "uncertainty": 0.0,
+          "missing_ratio": 0.0
+        },
+        "hard_feasible": true,
+        "soft_penalty": 0.0,
+        "objective_value": 0.9290897688349167,
+        "objective_vector": {},
+        "objective_version": "v3.0",
+        "evaluation_version": "v3.0",
+        "warnings": [],
+        "missing_fields": [],
+        "data_mode": "SIMULATION_ONLY"
+      }
+    },
+    {
+      "iteration": 3,
+      "candidate_id": "adaptive_v31-3-577814",
+      "parameters": {
+        "x1": 0.16622187574596703,
+        "x2": 0.6605165460423038
+      },
+      "strategy": "coordinate",
+      "control_action": "EXPLOIT",
+      "search_step": 0.1,
+      "exploration_ratio": 0.15,
+      "candidate_count": 2,
+      "objective": 0.9253746395018637,
+      "hard_feasible": true,
+      "soft_penalty": 0.0,
+      "uncertainty": 0.0,
+      "accepted_as_best": false,
+      "data_mode": "SIMULATION_ONLY",
+      "evaluation": {
+        "physical_result": {
+          "hard_feasible": true,
+          "missing_fields": []
+        },
+        "production_result": {
+          "objective": 0.9253746395018637,
+          "metrics": {
+            "x1": 0.16622187574596703,
+            "x2": 0.6605165460423038
+          }
+        },
+        "economic_result": {},
+        "uncertainty_result": {
+          "uncertainty": 0.0,
+          "missing_ratio": 0.0
+        },
+        "hard_feasible": true,
+        "soft_penalty": 0.0,
+        "objective_value": 0.9253746395018637,
+        "objective_vector": {},
+        "objective_version": "v3.0",
+        "evaluation_version": "v3.0",
+        "warnings": [],
+        "missing_fields": [],
+        "data_mode": "SIMULATION_ONLY"
+      }
+    },
+    {
+      "iteration": 4,
+      "candidate_id": "adaptive_v31-4-129815",
+      "parameters": {
+        "x1": 0.42451918914251396,
+        "x2": 0.8268521246720381
+      },
+      "strategy": "diversify",
+      "control_action": "EXPLORE",
+      "search_step": 0.2,
+      "exploration_ratio": 0.6,
+      "candidate_count": 2,
+      "objective": 0.9660590278052269,
+      "hard_feasible": true,
+      "soft_penalty": 0.0,
+      "uncertainty": 0.0,
+      "accepted_as_best": true,
+      "data_mode": "SIMULATION_ONLY",
+      "evaluation": {
+        "physical_result": {
+          "hard_feasible": true,
+          "missing_fields": []
+        },
+        "production_result": {
+          "objective": 0.9660590278052269,
+          "metrics": {
+            "x1": 0.42451918914251396,
+            "x2": 0.8268521246720381
+          }
+        },
+        "economic_result": {},
+        "uncertainty_result": {
+          "uncertainty": 0.0,
+          "missing_ratio": 0.0
+        },
+        "hard_feasible": true,
+        "soft_penalty": 0.0,
+        "objective_value": 0.9660590278052269,
+        "objective_vector": {},
+        "objective_version": "v3.0",
+        "evaluation_version": "v3.0",
+        "warnings": [],
+        "missing_fields": [],
+        "data_mode": "SIMULATION_ONLY"
+      }
+    },
+    {
+      "iteration": 5,
+      "candidate_id": "adaptive_v31-5-231821",
+      "parameters": {
+        "x1": 0.4290723626123693,
+        "x2": 0.8314842912107446
+      },
+      "strategy": "repair",
+      "control_action": "EXPLOIT",
+      "search_step": 0.1,
+      "exploration_ratio": 0.15,
+      "candidate_count": 2,
+      "objective": 0.9626376285682717,
+      "hard_feasible": true,
+      "soft_penalty": 0.0,
+      "uncertainty": 0.0,
+      "accepted_as_best": false,
+      "data_mode": "SIMULATION_ONLY",
+      "evaluation": {
+        "physical_result": {
+          "hard_feasible": true,
+          "missing_fields": []
+        },
+        "production_result": {
+          "objective": 0.9626376285682717,
+          "metrics": {
+            "x1": 0.4290723626123693,
+            "x2": 0.8314842912107446
+          }
+        },
+        "economic_result": {},
+        "uncertainty_result": {
+          "uncertainty": 0.0,
+          "missing_ratio": 0.0
+        },
+        "hard_feasible": true,
+        "soft_penalty": 0.0,
+        "objective_value": 0.9626376285682717,
+        "objective_vector": {},
+        "objective_version": "v3.0",
+        "evaluation_version": "v3.0",
+        "warnings": [],
+        "missing_fields": [],
+        "data_mode": "SIMULATION_ONLY"
+      }
+    },
+    {
+      "iteration": 6,
+      "candidate_id": "adaptive_v31-6-855770",
+      "parameters": {
+        "x1": 0.3401643528327233,
+        "x2": 0.6372148736758403
+      },
+      "strategy": "local",
+      "control_action": "EXPLORE",
+      "search_step": 0.2,
+      "exploration_ratio": 0.6,
+      "candidate_count": 2,
+      "objective": 0.9860997658085875,
+      "hard_feasible": true,
+      "soft_penalty": 0.0,
+      "uncertainty": 0.0,
+      "accepted_as_best": true,
+      "data_mode": "SIMULATION_ONLY",
+      "evaluation": {
+        "physical_result": {
+          "hard_feasible": true,
+          "missing_fields": []
+        },
+        "production_result": {
+          "objective": 0.9860997658085875,
+          "metrics": {
+            "x1": 0.3401643528327233,
+            "x2": 0.6372148736758403
+          }
+        },
+        "economic_result": {},
+        "uncertainty_result": {
+          "uncertainty": 0.0,
+          "missing_ratio": 0.0
+        },
+        "hard_feasible": true,
+        "soft_penalty": 0.0,
+        "objective_value": 0.9860997658085875,
+        "objective_vector": {},
+        "objective_version": "v3.0",
+        "evaluation_version": "v3.0",
+        "warnings": [],
+        "missing_fields": [],
+        "data_mode": "SIMULATION_ONLY"
+      }
+    },
+    {
+      "iteration": 7,
+      "candidate_id": "adaptive_v31-7-598951",
+      "parameters": {
+        "x1": 0.6820026947612046,
+        "x2": 0.10305571244359135
+      },
+      "strategy": "diversify",
+      "control_action": "EXPLOIT",
+      "search_step": 0.1,
+      "exploration_ratio": 0.15,
+      "candidate_count": 2,
+      "objective": 0.018307913445627655,
+      "hard_feasible": true,
+      "soft_penalty": 0.0,
+      "uncertainty": 0.0,
+      "accepted_as_best": false,
+      "data_mode": "SIMULATION_ONLY",
+      "evaluation": {
+        "physical_result": {
+          "hard_feasible": true,
+          "missing_fields": []
+        },
+        "production_result": {
+          "objective": 0.018307913445627655,
+          "metrics": {
+            "x1": 0.6820026947612046,
+            "x2": 0.10305571244359135
+          }
+        },
+        "economic_result": {},
+        "uncertainty_result": {
+          "uncertainty": 0.0,
+          "missing_ratio": 0.0
+        },
+        "hard_feasible": true,
+        "soft_penalty": 0.0,
+        "objective_value": 0.018307913445627655,
+        "objective_vector": {},
+        "objective_version": "v3.0",
+        "evaluation_version": "v3.0",
+        "warnings": [],
+        "missing_fields": [],
+        "data_mode": "SIMULATION_ONLY"
+      }
+    },
+    {
+      "iteration": 8,
+      "candidate_id": "adaptive_v31-8-574351",
+      "parameters": {
+        "x1": 0.6389134689261841,
+        "x2": 0.3723975427257312
+      },
+      "strategy": "random",
+      "control_action": "EXPLORE",
+      "search_step": 0.2,
+      "exploration_ratio": 0.6,
+      "candidate_count": 2,
+      "objective": 0.5914030783398581,
+      "hard_feasible": true,
+      "soft_penalty": 0.0,
+      "uncertainty": 0.0,
+      "accepted_as_best": false,
+      "data_mode": "SIMULATION_ONLY",
+      "evaluation": {
+        "physical_result": {
+          "hard_feasible": true,
+          "missing_fields": []
+        },
+        "production_result": {
+          "objective": 0.5914030783398581,
+          "metrics": {
+            "x1": 0.6389134689261841,
+            "x2": 0.3723975427257312
+          }
+        },
+        "economic_result": {},
+        "uncertainty_result": {
+          "uncertainty": 0.0,
+          "missing_ratio": 0.0
+        },
+        "hard_feasible": true,
+        "soft_penalty": 0.0,
+        "objective_value": 0.5914030783398581,
+        "objective_vector": {},
+        "objective_version": "v3.0",
+        "evaluation_version": "v3.0",
+        "warnings": [],
+        "missing_fields": [],
+        "data_mode": "SIMULATION_ONLY"
+      }
+    },
+    {
+      "iteration": 9,
+      "candidate_id": "adaptive_v31-9-520528",
+      "parameters": {
+        "x1": 0.3981320036681257,
+        "x2": 0.6372148736758403
+      },
+      "strategy": "coordinate",
+      "control_action": "EXPLORE",
+      "search_step": 0.2,
+      "exploration_ratio": 0.6,
+      "candidate_count": 2,
+      "objective": 0.9816598661647689,
+      "hard_feasible": true,
+      "soft_penalty": 0.0,
+      "uncertainty": 0.0,
+      "accepted_as_best": false,
+      "data_mode": "SIMULATION_ONLY",
+      "evaluation": {
+        "physical_result": {
+          "hard_feasible": true,
+          "missing_fields": []
+        },
+        "production_result": {
+          "objective": 0.9816598661647689,
+          "metrics": {
+            "x1": 0.3981320036681257,
+            "x2": 0.6372148736758403
+          }
+        },
+        "economic_result": {},
+        "uncertainty_result": {
+          "uncertainty": 0.0,
+          "missing_ratio": 0.0
+        },
+        "hard_feasible": true,
+        "soft_penalty": 0.0,
+        "objective_value": 0.9816598661647689,
+        "objective_vector": {},
+        "objective_version": "v3.0",
+        "evaluation_version": "v3.0",
+        "warnings": [],
+        "missing_fields": [],
+        "data_mode": "SIMULATION_ONLY"
+      }
+    }
+  ],
+  "operator_stats": [
+    {
+      "operator": "random",
+      "calls": 2,
+      "feasible_ratio": 1.0,
+      "improvements": 0,
+      "mean_reward": 0.19,
+      "total_reward": 0.38
+    },
+    {
+      "operator": "local",
+      "calls": 2,
+      "feasible_ratio": 1.0,
+      "improvements": 2,
+      "mean_reward": 0.22617169199943848,
+      "total_reward": 0.45234338399887697
+    },
+    {
+      "operator": "coordinate",
+      "calls": 2,
+      "feasible_ratio": 1.0,
+      "improvements": 0,
+      "mean_reward": 0.19,
+      "total_reward": 0.38
+    },
+    {
+      "operator": "diversify",
+      "calls": 2,
+      "feasible_ratio": 1.0,
+      "improvements": 1,
+      "mean_reward": 0.20392679273159411,
+      "total_reward": 0.40785358546318823
+    },
+    {
+      "operator": "repair",
+      "calls": 1,
+      "feasible_ratio": 1.0,
+      "improvements": 0,
+      "mean_reward": 0.19,
+      "total_reward": 0.19
+    }
+  ]
+}

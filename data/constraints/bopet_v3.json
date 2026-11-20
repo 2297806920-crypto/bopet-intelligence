@@ -1,0 +1,538 @@
+{
+  "version": "v3.0",
+  "scenario": "bopet",
+  "variables": [
+    {
+      "variable_id": "V01",
+      "name": "模唇间隙 lip gap",
+      "symbol": "lip_gap",
+      "unit": "mm",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "preferred_range": [
+        0.25,
+        0.45
+      ],
+      "constraint_type": "HARD",
+      "calibration_status": "UNCALIBRATED",
+      "evidence_ids": [
+        "1-03",
+        "1-06"
+      ],
+      "material_conditions": {},
+      "equipment_conditions": {},
+      "adjustable": true,
+      "dependency_variables": [],
+      "baseline": 0.35
+    },
+    {
+      "variable_id": "V02",
+      "name": "Choker bar 开度",
+      "symbol": "choker",
+      "unit": "%",
+      "lower_bound": 0.0,
+      "upper_bound": 100.0,
+      "preferred_range": [
+        40.0,
+        60.0
+      ],
+      "constraint_type": "SOFT",
+      "calibration_status": "UNCALIBRATED",
+      "evidence_ids": [
+        "1-03"
+      ],
+      "material_conditions": {},
+      "equipment_conditions": {},
+      "adjustable": true,
+      "dependency_variables": [],
+      "baseline": 48.0
+    },
+    {
+      "variable_id": "V03",
+      "name": "冷鼓表面温度",
+      "symbol": "drum_temp",
+      "unit": "°C",
+      "lower_bound": 15.0,
+      "upper_bound": 35.0,
+      "preferred_range": [
+        20.0,
+        24.0
+      ],
+      "constraint_type": "SOFT",
+      "calibration_status": "UNCALIBRATED",
+      "evidence_ids": [
+        "1-12"
+      ],
+      "material_conditions": {},
+      "equipment_conditions": {},
+      "adjustable": true,
+      "dependency_variables": [],
+      "baseline": 22.0
+    },
+    {
+      "variable_id": "V04",
+      "name": "气隙距离",
+      "symbol": "air_gap",
+      "unit": "cm",
+      "lower_bound": 25.0,
+      "upper_bound": 40.0,
+      "preferred_range": [
+        25.0,
+        40.0
+      ],
+      "constraint_type": "HARD",
+      "calibration_status": "UNCALIBRATED",
+      "evidence_ids": [
+        "1-03"
+      ],
+      "material_conditions": {},
+      "equipment_conditions": {},
+      "adjustable": true,
+      "dependency_variables": [],
+      "baseline": 30.0
+    },
+    {
+      "variable_id": "V05",
+      "name": "铸片拉伸比 DR",
+      "symbol": "dr",
+      "unit": "—",
+      "lower_bound": 5.0,
+      "upper_bound": 20.3,
+      "preferred_range": [
+        16.0,
+        19.5
+      ],
+      "constraint_type": "HARD",
+      "calibration_status": "UNCALIBRATED",
+      "evidence_ids": [
+        "2-03"
+      ],
+      "material_conditions": {},
+      "equipment_conditions": {},
+      "adjustable": true,
+      "dependency_variables": [],
+      "baseline": 18.4
+    },
+    {
+      "variable_id": "V06",
+      "name": "螺杆转速",
+      "symbol": "screw_rpm",
+      "unit": "r/min",
+      "lower_bound": 200.0,
+      "upper_bound": 600.0,
+      "preferred_range": [
+        350.0,
+        450.0
+      ],
+      "constraint_type": "HARD",
+      "calibration_status": "UNCALIBRATED",
+      "evidence_ids": [
+        "2-01"
+      ],
+      "material_conditions": {},
+      "equipment_conditions": {},
+      "adjustable": true,
+      "dependency_variables": [],
+      "baseline": 400.0
+    },
+    {
+      "variable_id": "V07",
+      "name": "挤出量 throughput",
+      "symbol": "throughput",
+      "unit": "kg/h",
+      "lower_bound": 800.0,
+      "upper_bound": 1600.0,
+      "preferred_range": [
+        950.0,
+        1100.0
+      ],
+      "constraint_type": "HARD",
+      "calibration_status": "UNCALIBRATED",
+      "evidence_ids": [
+        "2-01"
+      ],
+      "material_conditions": {},
+      "equipment_conditions": {},
+      "adjustable": true,
+      "dependency_variables": [],
+      "baseline": 1000.0
+    },
+    {
+      "variable_id": "V08",
+      "name": "冷辊线速度",
+      "symbol": "line_speed",
+      "unit": "m/min",
+      "lower_bound": 30.0,
+      "upper_bound": 120.0,
+      "preferred_range": [
+        60.0,
+        90.0
+      ],
+      "constraint_type": "DERIVED",
+      "calibration_status": "UNCALIBRATED",
+      "evidence_ids": [
+        "2-03"
+      ],
+      "material_conditions": {},
+      "equipment_conditions": {},
+      "adjustable": false,
+      "dependency_variables": [
+        "V05",
+        "V07"
+      ],
+      "baseline": 80.0
+    },
+    {
+      "variable_id": "V09",
+      "name": "MD 拉伸倍率",
+      "symbol": "md_ratio",
+      "unit": "—",
+      "lower_bound": 2.0,
+      "upper_bound": 4.0,
+      "preferred_range": [
+        2.8,
+        3.2
+      ],
+      "constraint_type": "SOFT",
+      "calibration_status": "UNCALIBRATED",
+      "evidence_ids": [
+        "3-03"
+      ],
+      "material_conditions": {},
+      "equipment_conditions": {},
+      "adjustable": true,
+      "dependency_variables": [],
+      "baseline": 3.0
+    },
+    {
+      "variable_id": "V10",
+      "name": "TD 拉伸倍率",
+      "symbol": "td_ratio",
+      "unit": "—",
+      "lower_bound": 2.5,
+      "upper_bound": 4.5,
+      "preferred_range": [
+        3.0,
+        3.5
+      ],
+      "constraint_type": "SOFT",
+      "calibration_status": "UNCALIBRATED",
+      "evidence_ids": [
+        "3-03"
+      ],
+      "material_conditions": {},
+      "equipment_conditions": {},
+      "adjustable": true,
+      "dependency_variables": [],
+      "baseline": 3.2
+    },
+    {
+      "variable_id": "V11",
+      "name": "拉伸温度",
+      "symbol": "stretch_temp",
+      "unit": "°C",
+      "lower_bound": 75.0,
+      "upper_bound": 120.0,
+      "preferred_range": [
+        85.0,
+        105.0
+      ],
+      "constraint_type": "HARD",
+      "calibration_status": "CALIBRATED",
+      "evidence_ids": [
+        "3-05"
+      ],
+      "material_conditions": {},
+      "equipment_conditions": {},
+      "adjustable": true,
+      "dependency_variables": [],
+      "baseline": 95.0
+    },
+    {
+      "variable_id": "V12",
+      "name": "拉伸应变速率",
+      "symbol": "strain_rate",
+      "unit": "1/s",
+      "lower_bound": 0.005,
+      "upper_bound": 16.0,
+      "preferred_range": [
+        0.5,
+        5.0
+      ],
+      "constraint_type": "HARD",
+      "calibration_status": "CALIBRATED",
+      "evidence_ids": [
+        "3-05"
+      ],
+      "material_conditions": {},
+      "equipment_conditions": {},
+      "adjustable": true,
+      "dependency_variables": [],
+      "baseline": 1.0
+    },
+    {
+      "variable_id": "V13",
+      "name": "热定型温度",
+      "symbol": "heat_set_temp",
+      "unit": "°C",
+      "lower_bound": 150.0,
+      "upper_bound": 240.0,
+      "preferred_range": [
+        190.0,
+        215.0
+      ],
+      "constraint_type": "SOFT",
+      "calibration_status": "UNCALIBRATED",
+      "evidence_ids": [
+        "3-06"
+      ],
+      "material_conditions": {},
+      "equipment_conditions": {},
+      "adjustable": true,
+      "dependency_variables": [],
+      "baseline": 200.0
+    },
+    {
+      "variable_id": "V14",
+      "name": "热定型松弛率",
+      "symbol": "relaxation",
+      "unit": "%",
+      "lower_bound": 0.0,
+      "upper_bound": 15.0,
+      "preferred_range": [
+        5.0,
+        10.0
+      ],
+      "constraint_type": "SOFT",
+      "calibration_status": "UNCALIBRATED",
+      "evidence_ids": [
+        "3-06"
+      ],
+      "material_conditions": {},
+      "equipment_conditions": {},
+      "adjustable": true,
+      "dependency_variables": [],
+      "baseline": 8.0
+    },
+    {
+      "variable_id": "V15",
+      "name": "收卷张力 taper",
+      "symbol": "taper",
+      "unit": "%",
+      "lower_bound": 0.0,
+      "upper_bound": 100.0,
+      "preferred_range": [
+        30.0,
+        45.0
+      ],
+      "constraint_type": "SOFT",
+      "calibration_status": "UNCALIBRATED",
+      "evidence_ids": [
+        "3-10"
+      ],
+      "material_conditions": {},
+      "equipment_conditions": {},
+      "adjustable": true,
+      "dependency_variables": [],
+      "baseline": 35.0
+    },
+    {
+      "variable_id": "V16",
+      "name": "压辊载荷 nip-load",
+      "symbol": "nip_load",
+      "unit": "N",
+      "lower_bound": 100.0,
+      "upper_bound": 600.0,
+      "preferred_range": [
+        250.0,
+        350.0
+      ],
+      "constraint_type": "SOFT",
+      "calibration_status": "UNCALIBRATED",
+      "evidence_ids": [
+        "3-10"
+      ],
+      "material_conditions": {},
+      "equipment_conditions": {},
+      "adjustable": true,
+      "dependency_variables": [],
+      "baseline": 300.0
+    },
+    {
+      "variable_id": "V17",
+      "name": "PET 特性黏度 IV",
+      "symbol": "iv",
+      "unit": "dL/g",
+      "lower_bound": 0.5,
+      "upper_bound": 0.9,
+      "preferred_range": [
+        0.62,
+        0.68
+      ],
+      "constraint_type": "HARD",
+      "calibration_status": "CALIBRATED",
+      "evidence_ids": [
+        "4-01"
+      ],
+      "material_conditions": {},
+      "equipment_conditions": {},
+      "adjustable": true,
+      "dependency_variables": [],
+      "baseline": 0.64
+    },
+    {
+      "variable_id": "V18",
+      "name": "重均分子量 Mw",
+      "symbol": "mw",
+      "unit": "—",
+      "lower_bound": 29000.0,
+      "upper_bound": 65000.0,
+      "preferred_range": [
+        40000.0,
+        50000.0
+      ],
+      "constraint_type": "HARD",
+      "calibration_status": "CALIBRATED",
+      "evidence_ids": [
+        "4-01"
+      ],
+      "material_conditions": {},
+      "equipment_conditions": {},
+      "adjustable": true,
+      "dependency_variables": [],
+      "baseline": 45000.0
+    },
+    {
+      "variable_id": "V19",
+      "name": "IPA(DMI) 共聚含量",
+      "symbol": "ipa",
+      "unit": "mol%",
+      "lower_bound": 0.0,
+      "upper_bound": 20.0,
+      "preferred_range": [
+        0.0,
+        10.0
+      ],
+      "constraint_type": "HARD",
+      "calibration_status": "CALIBRATED",
+      "evidence_ids": [
+        "4-02"
+      ],
+      "material_conditions": {},
+      "equipment_conditions": {},
+      "adjustable": true,
+      "dependency_variables": [],
+      "baseline": 0.0
+    },
+    {
+      "variable_id": "V20",
+      "name": "DBS 成核剂",
+      "symbol": "dbs",
+      "unit": "wt%",
+      "lower_bound": 0.5,
+      "upper_bound": 0.7,
+      "preferred_range": [
+        0.5,
+        0.7
+      ],
+      "constraint_type": "PERFORMANCE",
+      "calibration_status": "CALIBRATED",
+      "evidence_ids": [
+        "4-06"
+      ],
+      "material_conditions": {},
+      "equipment_conditions": {},
+      "adjustable": true,
+      "dependency_variables": [],
+      "baseline": 0.6
+    },
+    {
+      "variable_id": "V21",
+      "name": "纳米 SiO2",
+      "symbol": "sio2",
+      "unit": "wt%",
+      "lower_bound": 0.5,
+      "upper_bound": 1.5,
+      "preferred_range": [
+        0.8,
+        1.2
+      ],
+      "constraint_type": "PERFORMANCE",
+      "calibration_status": "CALIBRATED",
+      "evidence_ids": [
+        "4-07"
+      ],
+      "material_conditions": {},
+      "equipment_conditions": {},
+      "adjustable": true,
+      "dependency_variables": [],
+      "baseline": 1.0
+    },
+    {
+      "variable_id": "V22",
+      "name": "抗静电剂",
+      "symbol": "antistatic",
+      "unit": "wt%",
+      "lower_bound": 0.5,
+      "upper_bound": 3.0,
+      "preferred_range": [
+        0.8,
+        1.5
+      ],
+      "constraint_type": "SOFT",
+      "calibration_status": "UNCALIBRATED",
+      "evidence_ids": [
+        "4-08"
+      ],
+      "material_conditions": {},
+      "equipment_conditions": {},
+      "adjustable": true,
+      "dependency_variables": [],
+      "baseline": 1.0
+    },
+    {
+      "variable_id": "V23",
+      "name": "扩链剂 PMDA/Joncryl",
+      "symbol": "chain_extender",
+      "unit": "wt%",
+      "lower_bound": 0.5,
+      "upper_bound": 1.5,
+      "preferred_range": [
+        0.8,
+        1.2
+      ],
+      "constraint_type": "PERFORMANCE",
+      "calibration_status": "UNCALIBRATED",
+      "evidence_ids": [
+        "4-10"
+      ],
+      "material_conditions": {},
+      "equipment_conditions": {},
+      "adjustable": true,
+      "dependency_variables": [],
+      "baseline": 1.0
+    },
+    {
+      "variable_id": "V24",
+      "name": "再生料掺比 rPET",
+      "symbol": "rpet",
+      "unit": "wt%",
+      "lower_bound": 0.0,
+      "upper_bound": 30.0,
+      "preferred_range": [
+        0.0,
+        20.0
+      ],
+      "constraint_type": "HARD",
+      "calibration_status": "CALIBRATED",
+      "evidence_ids": [
+        "4-11"
+      ],
+      "material_conditions": {},
+      "equipment_conditions": {},
+      "adjustable": true,
+      "dependency_variables": [],
+      "baseline": 12.0
+    }
+  ]
+}

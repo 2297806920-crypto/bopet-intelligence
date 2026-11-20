@@ -1,0 +1,32 @@
+{
+  "benchmark/full_adaptive": {
+    "n": 3,
+    "mean": 0.9961206476660959,
+    "std": 0.0016347849352255862
+  },
+  "benchmark/no_state_feedback": {
+    "n": 3,
+    "mean": 0.9966389053077619,
+    "std": 0.0025846887303432047
+  },
+  "benchmark/no_anti_regression": {
+    "n": 3,
+    "mean": 0.6550643339884594,
+    "std": 0.5322778718787399
+  },
+  "bopet/full_adaptive": {
+    "n": 3,
+    "mean": 1173407.8966666667,
+    "std": 36616.20070430762
+  },
+  "bopet/no_state_feedback": {
+    "n": 3,
+    "mean": 1184872.0433333335,
+    "std": 16759.716212219468
+  },
+  "bopet/no_anti_regression": {
+    "n": 3,
+    "mean": 1008089.27,
+    "std": 19898.388804121805
+  }
+}

@@ -1,0 +1,146 @@
+/* BOPET Intelligence — restrained product UI tokens */
+:root {
+  --bi-bg: #F7F8FA;
+  --bi-surface: #FFFFFF;
+  --bi-ink: #172033;
+  --bi-muted: #64748B;
+  --bi-brand: #2455A4;
+  --bi-blue: #3974CA;
+  --bi-border: #E2E8F0;
+  --bi-success: #16835B;
+  --bi-warning: #D97706;
+  --bi-danger: #DC2626;
+  --bi-radius: 10px;
+  --bi-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+
+.stApp {
+  background: var(--bi-bg);
+}
+
+.block-container {
+  max-width: 1440px;
+  padding-bottom: 2rem;
+}
+
+[data-testid="stSidebar"] {
+  border-right: 1px solid var(--bi-border);
+  background: var(--bi-surface);
+}
+
+[data-testid="stSidebar"] .block-container {
+  padding-top: 0.4rem;
+}
+
+/* Sidebar navigation: key-scoped, not internal DOM-wide selectors. */
+.st-key-nav {
+  margin: 0.25rem 0 0.75rem 0;
+}
+
+.st-key-nav [role="radiogroup"] {
+  gap: 2px;
+}
+
+.st-key-nav label {
+  border-radius: 8px;
+  padding: 6px 8px;
+  transition: background 120ms ease;
+}
+
+.st-key-nav label:hover {
+  background: #F1F5F9;
+}
+
+.st-key-nav label:has(input:checked) {
+  background: #EEF4FF;
+  color: var(--bi-brand);
+}
+
+.st-key-nav label p {
+  font-size: 0.86rem;
+  font-weight: 500;
+}
+
+/* Metric cards read as data, not decoration. */
+[data-testid="stMetric"] {
+  background: var(--bi-surface);
+  border: 1px solid var(--bi-border);
+  border-radius: var(--bi-radius);
+  padding: 0.8rem 0.9rem;
+  box-shadow: var(--bi-shadow);
+}
+
+[data-testid="stMetricValue"] {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+
+[data-testid="stMetricLabel"] {
+  color: var(--bi-muted);
+  font-size: 0.78rem;
+}
+
+/* Keep dataframes compact and quiet. */
+[data-testid="stDataFrame"] {
+  border: 1px solid var(--bi-border);
+  border-radius: var(--bi-radius);
+  overflow: hidden;
+}
+
+/* Forms and expanders are panels, not bordered boxes everywhere. */
+[data-testid="stForm"] {
+  border: 1px solid var(--bi-border);
+  border-radius: var(--bi-radius);
+  padding: 0.85rem;
+  background: var(--bi-surface);
+}
+
+div[data-testid="stExpander"] {
+  border: 1px solid var(--bi-border);
+  border-radius: var(--bi-radius);
+  background: var(--bi-surface);
+}
+
+hr {
+  border-color: var(--bi-border);
+}
+
+/* Status text tokens used by static captions only. */
+.bi-kicker {
+  color: var(--bi-muted);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.15rem;
+}
+
+.bi-muted {
+  color: var(--bi-muted);
+}
+
+.bi-num {
+  font-variant-numeric: tabular-nums;
+}
+
+.bi-flow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  color: var(--bi-muted);
+  font-size: 0.78rem;
+}
+
+.bi-flow span {
+  background: var(--bi-surface);
+  border: 1px solid var(--bi-border);
+  border-radius: 7px;
+  padding: 5px 8px;
+  color: var(--bi-ink);
+}
+
+/* Avoid the default Streamlit footer chrome in a product workspace. */
+footer {
+  visibility: hidden;
+}
